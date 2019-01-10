@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int input (int *a,int *b)
+{
+	printf("enter a no.\n");
+	scanf("%d",a);
+	printf("enter a no.\n");
+	scanf("%d",b);
+}
+int add(int a, int b)
+{
+	int c;
+	c=a+b;
+	return c;
+}
+void output(int x, int y, int z)
+{
+	printf("%d + %d = %d\n",x,y,z);
+}
+int main(void)
+{
+	int x,y,z;
+    input(&x,&y);
+	z=add(x,y);
+	output (x,y,z);
+}
